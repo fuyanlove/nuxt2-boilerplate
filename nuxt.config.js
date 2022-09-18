@@ -16,7 +16,7 @@ export default {
     },
 
     // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css"],
+    css: ["element-ui/lib/theme-chalk/index.css", "csslab/reset.css",'@/assets/css/main.less'],
     buildModules: ["@nuxtjs/style-resources","@nuxtjs/svg"],
     styleResources: {
         less: ["csslab/base.less", "./assets/css/var.less"],
