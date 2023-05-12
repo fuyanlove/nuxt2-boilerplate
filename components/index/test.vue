@@ -1,5 +1,7 @@
 <template>
-<div class="m-index-test">Nuxt2 boilerplate</div>
+<div class="m-index-test">
+    <lang-switcher></lang-switcher>
+</div>
 </template>
 <script>
 export default {

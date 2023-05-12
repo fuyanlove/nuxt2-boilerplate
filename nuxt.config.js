@@ -1,4 +1,7 @@
 import { description, title } from "./settings";
+import zhCn from "./lang/zh-cn/index.js";
+import enUs from "./lang/en-us/index.js";
+
 export default {
     // Global page headers: https://go.nuxtjs.dev/config-head
     head: {
@@ -29,7 +32,37 @@ export default {
     components: true,
 
     // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
+    modules: [
+        [
+            "@nuxtjs/i18n",
+            {
+                defaultLocale: "zh-cn",
+                locales: [
+                    {
+                        code: "en-us",
+                        iso: "en-US",
+                        text: "English",
+                    },
+                    {
+                        code: "zh-cn",
+                        iso: "zh-CN",
+                        text: "中文",
+                    },
+                ],
+                vueI18n: {
+                    locale: "zh-cn",
+                    fallbackLocale: "zh-cn",
+                    messages: {
+                        "en-us": enUs,
+                        "zh-cn": zhCn,
+                    },
+                },
+                detectBrowserLanguage: {
+                    useCookie: true,
+                },
+            },
+        ],
+    ],
 
     // Build Configuration: https://go.nuxtjs.dev/config-build
     build: {

@@ -10,6 +10,7 @@
     "ssg": "nuxt generate"
   },
   "dependencies": {
+    "@nuxtjs/i18n": "^7.3.1",
     "axios": "^0.27.2",
     "core-js": "^3.19.3",
     "element-ui": "^2.15.6",
